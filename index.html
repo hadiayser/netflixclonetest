@@ -7,15 +7,23 @@
     <title>Netflix-clone</title>
   </head>
   <body>
-    <main>
-      <nav>
+    <div class="container">
+      <main>
+        <nav class="navBar">
+          <div class="language">English</div>
+          <button class="signIn">Sign In</button>
+        </nav>
         <div class="netflix-background"></div>
-      </nav>
-      <h1>Unlimited films, TV programmes and more</h1>
-      <h2>Watch anywhere. Cancel at any time.</h2>
-      <h3>
-        Ready to watch? Enter your email to create or restart your membership.
-      </h3>
-    </main>
+        <h1>Unlimited films, TV programmes and more</h1>
+        <h2>Watch anywhere. Cancel at any time.</h2>
+        <h3>
+          Ready to watch? Enter your email to create or restart your membership.
+        </h3>
+        <form>
+          <input type="text" id="fname" name="fname" value="Email address" />
+          <button class="button">Get Started></button>
+        </form>
+      </main>
+    </div>
   </body>
 </html>

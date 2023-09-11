@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
+    /* overflow: hidden; */
     }
 .netflix-background{
     background-image: url('/images/netflix-logo-png-large.png');
@@ -12,7 +13,7 @@ body {
     background-repeat: no-repeat;
     margin-left: 150px;
     margin-top: 20px;
-
+    position: relative;
   }
   h1{
     color: white;
@@ -25,7 +26,7 @@ body {
   h2{
     color: white;
     position: absolute;
-    top: 55%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
@@ -38,3 +39,98 @@ body {
     transform: translate(-50%, -50%);
     font-size: 20px;
   }
+  html {
+    height: 100%;
+  }
+  
+  html::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #fname{
+    background-color: black;
+    width: 300px;
+    opacity: 0.7;
+    height: 50px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    border-radius: 5px;
+
+  }
+  .button{
+    background-color: red;
+    width: 120px;
+    height: 56px;
+    top: 75%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    border-radius: 5px;
+
+  }
+  /* .navBar{
+    overflow: hidden;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+  .container{
+    display: grid;
+    grid-template-columns: 16rem 1fr 16rem;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main";
+    
+  }
+  main{
+    grid-area: main;
+  }
+  .navBar{
+    grid-area: nav;
+    position: relative;
+    float: right;
+    margin: 0;
+    padding: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+  }
+  .signIn{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  .language{
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding: 5px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+ 
+  
