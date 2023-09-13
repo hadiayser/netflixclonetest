@@ -8,7 +8,7 @@ body {
     }
 .netflix-background{
     background-image: url('/images/netflix-logo-png-large.png');
-    height: 800px;
+    height: 100px;
     background-size: 150px;
     background-repeat: no-repeat;
     margin-left: 150px;
@@ -18,26 +18,27 @@ body {
   h1{
     color: white;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 50px;
+    white-space: nowrap
   }
   h2{
     color: white;
     position: absolute;
-    top: 57%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 25px;
   }
   h3{
     color: white;
     position: absolute;
-    top: 65%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
+    font-size: 21px;
   }
   html {
     height: 100%;
@@ -54,10 +55,10 @@ body {
   }
   #fname{
     background-color: black;
-    width: 300px;
+    width: 400px;
     opacity: 0.7;
     height: 50px;
-    top: 75%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -67,29 +68,22 @@ body {
     border-radius: 5px;
 
   }
-  .button{
-    background-color: red;
-    width: 120px;
+  .buttonStarted{
+    background-color:#E50914;
+    width: 150px;
     height: 56px;
-    top: 75%;
-    left: 65%;
+    top: 65%;
+    left: 69%;
     transform: translate(-50%, -50%);
     position: absolute;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     padding-left: 10px;
     border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
 
   }
-  /* .navBar{
-    overflow: hidden;
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  } */
   .container{
     display: grid;
     grid-template-columns: 16rem 1fr 16rem;
@@ -109,17 +103,19 @@ body {
     margin: 0;
     padding: 50px;
     display: grid; 
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 0.5fr 1fr; 
     grid-gap: 20px; 
   }
   .signIn{
-    background-color: red;
+    background-color: #E50914;
     color: white;
     padding: 5px;
     width: 80px;
     height: 30px;
     border-radius: 5px;
     font-size: 15px;
+    z-index: 1;
+
   }
   .language{
     background-color: black;
@@ -131,6 +127,22 @@ body {
     border-radius: 5px;
     font-size: 18px;
     text-align: center;
+    z-index: 1;
+  }
+  .MainPage{
+    background-color: #E50914;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    white-space: nowrap;
+    z-index: 1;
+  } a{
+    text-decoration: none;
+    color: inherit;
+
   }
  
   

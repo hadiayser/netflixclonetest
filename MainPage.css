@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(52, 47, 47);
+}
+.netflix-background{
+    width: 100px;
+    height: 30px; 
+    display: grid;
+    grid-area: nav;
+    padding-left: 50px;
+    margin-top: 10px;
+
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 16rem 1fr 16rem;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main";
+}
+main{
+    grid-area: main;
+    display: flex;
+}
+  .navBar{
+    grid-area: nav;
+    display: flex;
+}
+
+.browseList li{
+    grid-area: nav;
+    display: inline;
+    color: white;
+  }
+  .card {
+    width: 150px;
+    height: auto;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
