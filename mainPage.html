@@ -26,26 +26,90 @@
       <main>
         <p>New Releases</p>
         <div class="card">
-          <img src="images/movieCard.jpg" alt="movieCard" style="width: 100%" />
-          <div class="CardContainer"></div>
+          <img
+            src="images/kingoftheland.jpg"
+            alt="movieCard"
+            style="width: 100%"
+          />
+          <button onClick="onAddButtonClick()" class="addToFavBtn">
+            Add to Favorites
+          </button>
         </div>
         <div class="card">
-          <img src="images/movieCard.jpg" alt="movieCard" style="width: 100%" />
-          <div class="CardContainer"></div>
+          <img
+            src="images/kingoftheland.jpg"
+            alt="movieCard"
+            style="width: 100%"
+          />
+          <button onClick="onAddButtonClick()" class="addToFavBtn">
+            Add to Favorites
+          </button>
         </div>
         <div class="card">
-          <img src="images/movieCard.jpg" alt="movieCard" style="width: 100%" />
-          <div class="CardContainer"></div>
+          <img
+            src="images/kingoftheland.jpg"
+            alt="movieCard"
+            style="width: 100%"
+          />
+          <button onClick="onAddButtonClick()" class="addToFavBtn">
+            Add to Favorites
+          </button>
         </div>
         <div class="card">
-          <img src="images/movieCard.jpg" alt="movieCard" style="width: 100%" />
-          <div class="CardContainer"></div>
+          <img
+            src="images/kingoftheland.jpg"
+            alt="movieCard"
+            style="width: 100%"
+          />
+          <button onClick="onAddButtonClick()" class="addToFavBtn">
+            Add to Favorites
+          </button>
         </div>
         <div class="card">
-          <img src="images/movieCard.jpg" alt="movieCard" style="width: 100%" />
-          <div class="CardContainer"></div>
+          <img
+            src="images/kingoftheland.jpg"
+            alt="movieCard"
+            style="width: 100%"
+          />
+          <button onClick="onAddButtonClick()" class="addToFavBtn">
+            Add to Favorites
+          </button>
         </div>
+        <div class="card">
+          <img
+            src="images/kingoftheland.jpg"
+            alt="movieCard"
+            style="width: 100%"
+          />
+          <button onClick="onAddButtonClick()" class="addToFavBtn">
+            Add to Favorites
+          </button>
+        </div>
+        <div class="card">
+          <img
+            src="images/kingoftheland.jpg"
+            alt="movieCard"
+            style="width: 100%"
+          />
+          <button onClick="onAddButtonClick()" class="addToFavBtn">
+            Add to Favorites
+          </button>
+        </div>
+        <p>My Favorites</p>
+        <div id="favSection"></div>
       </main>
     </div>
+    <script>
+      let favShow = document.getElementById("favSection");
+      let showCard = document.querySelectorAll("card");
+      function onAddButtonClick() {
+        favShow.innerHTML += ` <div class="card">
+          <img
+            src="images/kingoftheland.jpg"
+            alt="movieCard"
+            style="width: 100%"
+          />`;
+      }
+    </script>
   </body>
 </html>

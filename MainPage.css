@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(52, 47, 47);
+    background-color:#141414;
+    height: 100%;
+    margin: 0;
 }
 .netflix-background{
     width: 100px;
@@ -21,11 +23,11 @@ body{
 }
 main{
     grid-area: main;
-    display: flex;
 }
   .navBar{
     grid-area: nav;
     display: flex;
+    background-color: #141414;
 }
 
 .browseList li{
@@ -34,11 +36,20 @@ main{
     color: white;
   }
   .card {
-    width: 150px;
-    height: auto;
+    display: inline-block;
+    width: 100%;
+    max-width: 298px;
+  }
+  .card img{
+    height: 163px;
+    object-fit:inherit;
   }
   
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  p{
+    color: white;
+    font-size: 35px
   }
   
